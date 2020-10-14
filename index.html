@@ -1,0 +1,141 @@
+<!--
+Sarthak K Bhagat
+Sarthak_bhagat@student.uml.edu
+Undergraduate Student at Umass Lowell in Computer Science
+Course: 91.61 GUI Programaming I
+Assingment#2 Creating the First Web Page
+File: http://cs.uml.edu/~sbhagat/index.html
+Created  by Sarthak Bhagat on 09-21-2020
+
+The website is just an introduction to my first web page. It has brief intro about myself, my education, the courses i took and a GUI  tracker which will be a base point for all future assingments for this course. This file(index.html) only contains html code
+< > describes opening of a tag and </  > describes the closing of the tag throughout the file.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Linking the external style.css file here in the html code -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- This name is displayed in the tab -->
+  <title>Sarthak Bhagat</title>
+</head>
+
+<body>
+  <header>
+    <!--  This is the header of the website -->
+    <h2> Sarthak Bhagat</h2>
+  </header>
+
+  <!-- This is a nav bar, a list which will smooth scroll to the information(header) provided in the webpage -->
+  <nav>
+    <ul>
+      <li><a href="#my_about">About</a></li>
+      <li><a href="#my_education">College</a></li>
+      <li><a href="#my_courses">Courses</a></li>
+      <li><a href="#my_gui">GUI Tracker</a></li>
+    </ul>
+  </nav>
+
+  <!--This is a paragraph-->
+  <p> This website is going to be a tracker for GUI I assignments.</p>
+
+  <!--This is a section, a container which holds information about me. A brief introduction with some likes and dislikes and future goals. I have used ID here instead of class. It has been made sure that there only exists a unique id throughout the website
+-->
+  <section id="my_about">
+    <h3> ABOUT ME </h3>
+    <div class="about">
+      Hello myself Sarthak Bhagat. I'm currently an undergraduate student studying Computer Science
+      at the Umass Lowell <br> I'm in my senior year and looking forward to work as a full-stack developer after graduation.<br> Few other interests are Database Adminstrator, Artifical Intelligence and Software Developer.<br> Other interests
+      outside of academics are playing and watching sports.<br>Interesting fact about me is I do have a National Championship in Cricket to my name.
+    </div><br>
+  </section>
+
+  <!--
+  This section has a id called my_education which keeps track of the high school and universities I attended. It also has a picture of my most recent university(Umass Lowell). I have used flex here inorder to get the image side by side in my web page. Unordered list has been used.
+  -->
+  <section id="my_education">
+    <h3> EDUCATION </h3>
+    <div class=" parent">
+      <div class="college_img">
+        <img src="umass.jpg" alt="UMass Lowell" width="350" height="350">
+      </div>
+      <div class="education">
+        <ul>
+          <li> Fairmont Senior High School (2015-2017)</li>
+          <li> West Virginia University(2017-2019: Major-Chemistry)</li>
+          <li>University of Massachusetts Lowell(2019-2021: Major-Computer Science)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  This section has a id of my_courses which gives information about the courses i already took. An unordered list have been used.
+-->
+  <section id="my_courses">
+    <h3> ACADEMIC COURSES </h3>
+    <div class="academics">
+      <ul>
+        <li> Analysis of Algorithms</li>
+        <li> Computer Architecture</li>
+        <li> Database I</li>
+        <li> Data Structures</li>
+        <li> Discrete Mathematics</li>
+        <li> Foundations of CS</li>
+        <li> Machine Learning</li>
+        <li>Operating System</li>
+      </ul>
+    </div><br>
+  </section>
+
+  <!--
+  This section has a unique id called my_gui which is the base point of all my future assignments for the GUI I course.It keeps tracks of the Assignment number, title/subject and the submission dates. Table was created with 3 attributes described to keep track of as my table header.
+-->
+
+  <section id="my_gui">
+    <h3> GUI TRACKER </h3>
+    <div class="GUI">
+      <table>
+        <tr class=sub>
+          <th>Assignment#</th>
+          <th>Subject</th>
+          <th> Submission Date</th>
+        </tr>
+        <tr>
+          <td>Assignment#1</td>
+          <td> Snapshots </td>
+          <td>09-08-2020</td>
+        </tr>
+        <tr>
+          <td>Assignment#2</td>
+          <td>First Web Page </td>
+          <td>09-22-2020</td>
+        </tr>
+        <tr>
+          <td>Assignment#3</td>
+          <td> Style Site with External CSS</td>
+          <td>09-28-2020</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <!-- This is a break line-->
+  <br>
+  <br>
+
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+    </a>
+  </p>
+  <!--  This is a footer having the copyright statement -->
+  <footer>
+    Copyright &copy; Sarthak Bhagat 2020
+  </footer>
+</body>
+
+</html>

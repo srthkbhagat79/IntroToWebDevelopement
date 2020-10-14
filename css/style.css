@@ -1,0 +1,133 @@
+ /*
+ Sarthak K Bhagat
+ Sarthak_bhagat@student.uml.edu
+ Undergraduate Student at Umass Lowell in Computer Science
+ Course: 91.61 GUI Programaming I
+ Assingment#2 Creating the First Web Page
+ Created  by Sarthak Bhagat on 09-21-2020
+
+ The website is just an introduction to my first web page. This file (style.css) only contains stylesheet. Different stylings have been done using the .css file. It is used as an external file and is linked with the html file. This file uses insertion of  color, images, text aligning to the center, sizing and text decorations.
+ */
+ /* {
+   font-weight: bold;
+   color: dark blue;
+   font-size: 150%;
+ } */
+ /* The text in ABOUT_ME section is being centered with size 140%. The . is used to apply css only the given class or div or id.
+ */
+ div.about {
+   text-align: center;
+   font-size: 130%;
+ }
+
+ /* This is all the stylings applied to the paragraph. Color, font to bold, underline, size increase and text align to center
+ */
+ p {
+   text-align: center;
+   color: white;
+   font-weight: bold;
+   text-decoration: underline;
+   font-size: 130%
+ }
+
+ /*All the headers with the h3 tag has been used to apply css.
+ Headers color change to green, aligned to center and size increase.
+ */
+ h3 {
+   color: green;
+   text-align: center;
+   font-size: 140%;
+ }
+
+ /* This applies css to the entire body of the html.
+ Background to black and text color to cyan
+ */
+ body {
+   background-color: black;
+   color: cyan;
+ }
+
+ /* Css applied to the education section by center aligning,
+ displaying tables setting margin to 0 and increasing size
+ */
+ div.education ul {
+   padding-top: 50px;
+   margin: 0 auto;
+   font-size: 120%
+ }
+
+ /*Div.parent is the flex used to adjust image of the college side by side. Parent was used to create container inside container
+ */
+ div.parent {
+   display: flex;
+ }
+
+ /*Css being applied to ACADEMIC section with text being center aligned, displaying tables with margins 0 and size increase
+*/
+ div.academics ul {
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   font-size: 120%;
+ }
+
+ div.academics ul li, div.education ul li {
+   list-style: none;
+ }
+
+ /*
+ CSS being applied to GUI section of the html with same functions we have used so far to make it identical as the other sections in the html
+*/
+ div.GUI {
+   text-align: center;
+   display: table;
+   margin: 0 auto;
+   width: -10px;
+   font-size: 120%;
+ }
+
+ /*CSS applied to the unordered list in the nav bar */
+ nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+ }
+
+ /*Position of the Nav Bar floating to the left*/
+ nav li {
+   float: left;
+ }
+
+ /* CSS applied to the navbar*/
+ li a {
+   display: block;
+   padding: 6px;
+   background-color: black;
+   color: green;
+   font-size: 135%
+ }
+
+ /*CSS applied to the table section in the GUI */
+ tr.sub {
+   font-size: 140%;
+ }
+
+ /* CSS applied to the footer*/
+ footer {
+   text-align: center;
+   font-style: italic;
+   color: white;
+ }
+
+ /*The college image used in the education section. The border radius is set to 100 to give that rounded shape/borders to the image
+ */
+ img {
+   border-radius: 100%;
+ }
+
+ /*This part of the css applies to navbar when on clicking the hyperlink will have a smooth scroll to the appropriate headers provided in the reference
+ */
+ html {
+   scroll-behavior: smooth;
+ }
